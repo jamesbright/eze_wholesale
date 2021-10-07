@@ -5,6 +5,8 @@ A simple API that exposes endpoints to access a buy or sell request route
 - ```git clone``` or download project as zip
 - ```cd``` to project root directory
 - run ```npm install && npm run dev```
+- rename .env.sample to .env
+- set MONGO_URL by creating mongoDB cluster from [https://cloud.mongodb.com](Mongodb cloud)
 
 ### design principles
 - written in typescript for better tooling at any scale.
