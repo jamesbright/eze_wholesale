@@ -13,3 +13,5 @@ export const BuyRequestSchema = new Schema({
 },
     { timestamps: true }
 );
+
+BuyRequestSchema.index({ item:'text', storageSize:'text', grading:'text', unlocked:'text', price:'text' });

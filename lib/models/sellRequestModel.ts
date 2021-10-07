@@ -13,3 +13,6 @@ export const SellRequestSchema = new Schema({
 },
     { timestamps: true }
 );
+
+
+SellRequestSchema.index({ item: 'text', storageSize: 'text', grading: 'text', unlocked: 'text', price: 'text' });
