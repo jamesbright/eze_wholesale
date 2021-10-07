@@ -1,5 +1,5 @@
 import * as mongoose from 'mongoose';
-import { SellRequestSchema } from '../models/SellRequestModel';
+import { SellRequestSchema } from '../models/sellRequestModel';
 import { SellRequestI } from '../interfaces/sellRequest';
 import * as dotenv from 'dotenv';
 import { Request, Response } from 'express';

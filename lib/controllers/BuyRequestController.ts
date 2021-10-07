@@ -1,5 +1,5 @@
 import * as mongoose from 'mongoose';
-import { BuyRequestSchema } from '../models/BuyRequestModel';
+import { BuyRequestSchema } from '../models/buyRequestModel';
 import { BuyRequestI } from '../interfaces/buyRequest';
 import * as dotenv from 'dotenv';
 import { Request, Response } from 'express';
