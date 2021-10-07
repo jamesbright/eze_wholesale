@@ -34,10 +34,10 @@ class App {
         this.app.use(bodyParser.urlencoded({ extended: false }));
 
     }
-   
+
 
     private mongoSetup(): void {
-    
+
         // mongodb connection
 
         const options = {
