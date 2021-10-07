@@ -1,0 +1,221 @@
+{
+	"info": {
+		"_postman_id": "5d9a691e-a1d1-48b7-8be1-f2e045a3af2b",
+		"name": "Eze wholesale",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create buy request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "item",
+							"value": "Iphone x",
+							"type": "text"
+						},
+						{
+							"key": "storageSize",
+							"value": "32GB",
+							"type": "text"
+						},
+						{
+							"key": "grading",
+							"value": "A1",
+							"type": "text"
+						},
+						{
+							"key": "unlocked",
+							"value": "true",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "146000",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:5000/api/requests/buy/create",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"requests",
+						"buy",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all buy requests",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/api/requests/buy",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"requests",
+						"buy"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create sell request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "item",
+							"value": "Iphone X",
+							"type": "text"
+						},
+						{
+							"key": "storageSize",
+							"value": "64GB",
+							"type": "text"
+						},
+						{
+							"key": "grading",
+							"value": "C2",
+							"type": "text"
+						},
+						{
+							"key": "unlocked",
+							"value": "true",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "137000",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:5000/api/requests/sell/create",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"requests",
+						"sell",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all sale request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/api/requests/sell",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"requests",
+						"sell"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get buy request with id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/api/requests/buy/get/:itemId",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"requests",
+						"buy",
+						"get",
+						":itemId"
+					],
+					"variable": [
+						{
+							"key": "itemId",
+							"value": "615f495d4c4fed30cc62375d"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get sell request with id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:5000/api/requests/sell/get/:itemId",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"requests",
+						"sell",
+						"get",
+						":itemId"
+					],
+					"variable": [
+						{
+							"key": "itemId",
+							"value": "615f4b49cae51021ccd7eae3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get a request type by parameter",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}
